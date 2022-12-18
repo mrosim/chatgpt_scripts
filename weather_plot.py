@@ -49,11 +49,11 @@ def update(num):
     scatter.set_array(list(grid.values()))
     scatter.set_clim(vmin=min(grid.values()), vmax=max(grid.values()))
     # Stop the animation after 100 frames
-    if num == 20000:
+    if num == 100000:
         ani.event_source.stop()
 
 # Create an animation using the update function
-ani = animation.FuncAnimation(fig, update, interval=200)
-ani.save('animation.gif', writer='imagemagick')
+ani = animation.FuncAnimation(fig, update, interval=100)
+#ani.save('animation.gif', writer='imagemagick')
 # Show the animation
 plt.show()
