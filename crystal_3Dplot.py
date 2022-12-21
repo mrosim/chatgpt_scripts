@@ -17,7 +17,7 @@ values = grid.values()
 # Create a 3D scatter plot of the grid
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-cmap = matplotlib.cm.get_cmap('viridis')
+cmap = matplotlib.cm.get_cmap('cool')
 scatter = ax.scatter(xs, ys, list(values), c=list(values), cmap=cmap)
 #scatter = ax.scatter(xs, ys, values)
 
