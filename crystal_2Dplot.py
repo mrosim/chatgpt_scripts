@@ -39,7 +39,7 @@ def update(num):
                     # Get the value of the surrounding cell
                     surrounding_value = grid[(surrounding_x, surrounding_y)]
 
-                    # Modify the value of the current cell based on the value of the surrounding cell
+                    # Modify the value of the current cell based on the value of the surrounding cell <--- setting >= the height in each point converge
                     if surrounding_value > current_value:
                         grid[(x, y)] += 1
                     elif surrounding_value < current_value:
